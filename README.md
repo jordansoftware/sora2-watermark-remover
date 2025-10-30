@@ -31,23 +31,27 @@ Le frontend est en **React (Vite)** et le backend en **FastAPI** avec traitement
 git clone https://github.com/ton-compte/watermark-remover.git
 cd watermark-remover
 ```
-Créer et activer un environnement virtuel :
+### 2.Créer et activer un environnement virtuel :
 
+```bash
 cd backend
 python -m venv venv
 # Windows
 venv\Scripts\activate
 # Linux/Mac
 source venv/bin/activate
+```
 
-Installer les dépendances du frontend (Node.js)
+### 3.Installer les dépendances du frontend (Node.js)
+```bash
 cd ../frontend
 npm install
-
-Backend (FastAPI)
+```
+### 3.Installer les dépendances du backend (FastApi)
+```bash
 cd backend
 python -m uvicorn main:app --reload --port 8000
-
+```
 
 Frontend (React)
 cd frontend
@@ -55,7 +59,8 @@ npm run dev
 
 
 Structure du projet
-watermark-remover/
+```
+
 ├── backend/
 │   ├── main.py              # FastAPI backend
 │   ├── watermark_remover.py # Fonction de suppression du watermark
@@ -68,3 +73,4 @@ watermark-remover/
     │   └── index.css
     ├── package.json
     └── vite.config.js
+```
